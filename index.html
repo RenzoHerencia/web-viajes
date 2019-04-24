@@ -2,508 +2,993 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, height=device-height">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Web Viajes</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.typekit.net/hfr0jqy.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main-responsive.css">
 </head>
 <body>
 
-<header class="header-home">
-	<a href="index.html" class="logo-header"><img src="img/web-viajes-logo.svg" alt="Web Viajes"></a>
-	<nav class="header-nav">
-		<ul>
-			<li class="btn-recomendar"><a href="javascript:void(0);">Recomendar</a></li>
-			<li><a href="javascript:void(0);">¿Que hacemos?</a></li>
-			<li><a href="javascript:void(0);">Contacto</a></li>
-			<li class="btn-inicio-sesion"><a href="javascript:void(0);">Inicio sesión</a></li>
-		</ul>
-	</nav>	
-</header>
+	<header class="header-nav-container">		
+		<a href="index.html" class="logo-header"><img src="img/web-viajes-logo.svg" alt="Web Viajes"></a>
+		<nav class="header-nav">
+			<ul>
+				<li class="btn-recomendar"><a href="javascript:void(0);">Recomendar</a></li>
+				<li><a href="javascript:void(0);">¿Que hacemos?</a></li>
+				<li><a href="javascript:void(0);">Contacto</a></li>
+				<li class="btn-inicio-sesion"><a href="javascript:void(0);">Inicio sesión</a></li>
+			</ul>
+			<div class="mini-search open-search">
+				<input type="text" class="typeahead" name="search" autocomplete="off" >						
+				<button class="search-icon"></button>
+			</div>
 
-<section class="header-home">
-	<h1>Descubre el mundo a través de tus amigos</h1>
-	<p>Unite a nuestra plataforma, crea tus recomendaciones y compartila con amigos</p>
-	<div class="search">
-		<input type="text" class="form-control u-form__input" name="search" placeholder="Busca una ciudad o usuario.. " aria-label="Busca una ciudad o usuario.. ">
-		<img src="img/search-icon.svg" alt="">
-	</div>
-</section>
+		</nav>
+	</header>
 
-<section style="padding-bottom: 40px">	
-	<div class="container container-cards">
+	<section class="nav-mobile">
+		<div class="nav-mobile-header">
+			<a href="javascript:void(0);" class="open-nav">
+				<div class="burger"> 
+					<span></span> <span></span> <span></span>
+				</div>
+			</a>
+			<a href="index.html" class="logo-header"><img src="img/web-viajes-logo.svg" alt="Web Viajes"></a>
+			<div class="mini-search open-search">
+				<input type="text" class="typeahead" name="search" autocomplete="off" placeholder="Busca una ciudad o usuario...">
+				<button class="search-icon" href="javascript:void(0);"></button>
+			</div>
+		</div>
+		<div class="toggle-menu">
+			<div class="nav-responsive">
+				<ul>
+					<li class="btn-recomendar"><a href="javascript:void(0);">Recomendar</a></li>
+					<li><a href="javascript:void(0);">¿Que hacemos?</a></li>
+					<li><a href="javascript:void(0);">Contacto</a></li>
+					<li><a href="javascript:void(0);">Términos y condiciones</a></li>
+					<li><a href="javascript:void(0);">Privacidad</a></li>
+					<li class="language">
+						<a href="javascript:void(0);">English</a> - 
+						<a href="javascript:void(0);" class="current">Español</a>
+					</li>
+				</ul>				
+				
+				<div class="row">
+					<div class="col-6"><a href="javascript:void(0);" class="btn-inicio-sesion">Inicio sesión</a></div>
+					<div class="col-6"><a href="javascript:void(0);" class="btn-registrarse">Registrarse</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="header-home">
+		<h1>Descubre el mundo a través de tus amigos</h1>
+		<p>Unite a nuestra plataforma, crea tus recomendaciones y compartila con amigos</p>
+		<div class="main-search">
+			<input type="text" class="typeahead" name="search" placeholder="Busca una ciudad o usuario..." autocomplete="off">
+			<button class="search-icon"></button>			
+		</div>
+	</section>
+
+
+	<section class="container container-cards clearfix" style="padding-bottom: 40px">
 		<div class="row">
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-1.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/alojamiento.svg" alt=""></li>
-							<li><img src="img/intereses/antes-viajar.svg" alt=""></li>
-							<li><img src="img/intereses/bar.svg" alt=""></li>
-							<li><img src="img/intereses/cafe.svg" alt=""></li>
-							<li><img src="img/intereses/cambio-divisas.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
+			<div class="col-md-12">			
+				<ul class="tab-minimal">
+					<li class="current"><a href="javascript:void(0);" data-tab="ciudades">Ciudades</a></li>
+					<li><a href="javascript:void(0);" data-tab="usuarios">Usuarios</a></li>
+				</ul>			
 			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-2.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/clima.svg" alt=""></li>
-							<li><img src="img/intereses/comida.svg" alt=""></li>
-							<li><img src="img/intereses/cultura.svg" alt=""></li>
-							<li><img src="img/intereses/deporte.svg" alt=""></li>
-							<li><img src="img/intereses/discoteca.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-3.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/espectaculo.svg" alt=""></li>
-							<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
-							<li><img src="img/intereses/fiesta.svg" alt=""></li>
-							<li><img src="img/intereses/fotografia.svg" alt=""></li>
-							<li><img src="img/intereses/mercados.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-1.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/montana.svg" alt=""></li>
-							<li><img src="img/intereses/paisaje.svg" alt=""></li>
-							<li><img src="img/intereses/bar.svg" alt=""></li>
-							<li><img src="img/intereses/persona-destacada.svg" alt=""></li>
-							<li><img src="img/intereses/playa.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-2.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/punto-interes.svg" alt=""></li>
-							<li><img src="img/intereses/que-llevar.svg" alt=""></li>
-							<li><img src="img/intereses/shopping.svg" alt=""></li>
-							<li><img src="img/intereses/tour.svg" alt=""></li>
-							<li><img src="img/intereses/transporte.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-3.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/espectaculo.svg" alt=""></li>
-							<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
-							<li><img src="img/intereses/fiesta.svg" alt=""></li>
-							<li><img src="img/intereses/fotografia.svg" alt=""></li>
-							<li><img src="img/intereses/mercados.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-						<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-1.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/alojamiento.svg" alt=""></li>
-							<li><img src="img/intereses/antes-viajar.svg" alt=""></li>
-							<li><img src="img/intereses/bar.svg" alt=""></li>
-							<li><img src="img/intereses/cafe.svg" alt=""></li>
-							<li><img src="img/intereses/cambio-divisas.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-2.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/clima.svg" alt=""></li>
-							<li><img src="img/intereses/comida.svg" alt=""></li>
-							<li><img src="img/intereses/cultura.svg" alt=""></li>
-							<li><img src="img/intereses/deporte.svg" alt=""></li>
-							<li><img src="img/intereses/discoteca.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-3.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/espectaculo.svg" alt=""></li>
-							<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
-							<li><img src="img/intereses/fiesta.svg" alt=""></li>
-							<li><img src="img/intereses/fotografia.svg" alt=""></li>
-							<li><img src="img/intereses/mercados.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-1.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/montana.svg" alt=""></li>
-							<li><img src="img/intereses/paisaje.svg" alt=""></li>
-							<li><img src="img/intereses/bar.svg" alt=""></li>
-							<li><img src="img/intereses/persona-destacada.svg" alt=""></li>
-							<li><img src="img/intereses/playa.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-2.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/punto-interes.svg" alt=""></li>
-							<li><img src="img/intereses/que-llevar.svg" alt=""></li>
-							<li><img src="img/intereses/shopping.svg" alt=""></li>
-							<li><img src="img/intereses/tour.svg" alt=""></li>
-							<li><img src="img/intereses/transporte.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			<div class="col-md-auto">
-				<div class="city-card">
-					<a href="#"><div class="city-img" style="background-image: url('img/cities/city-3.jpg');"></div></a>
-					<div class="city-title">
-						<a href="#"><h3>Nombre Ciudad<br><small>Nombre País</small></h3></a>
-						<div class="likes">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-278 415 15 13.2">					
-								<path class="st0" d="M-264.3,416.2c-0.8-0.8-1.8-1.2-2.9-1.2c-1.1,0-2.2,0.4-2.9,1.2l-0.4,0.4l-0.4-0.4c-0.8-0.8-1.8-1.2-2.9-1.2
-								c-1.1,0-2.1,0.4-2.9,1.2c-0.8,0.8-1.2,1.8-1.2,2.9c0,1.1,0.4,2.1,1.2,2.9l6,6c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l6-6c0.8-0.8,1.2-1.8,1.2-2.9C-263,418.1-263.5,417-264.3,416.2L-264.3,416.2z M-264.9,421.5"/>
-							</svg>
-							<span>86</span>
-						</div>
-						
-					</div>
-					<div class="city-content">
-						<div class="user-title">
-							<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
-							<div class="content-title">
-								<a href="#"><h2>Nombre Usuario</h2></a>
-								<span>5 amigos en común</span>
-								<em>27 años</em>
-							</div>
-						</div>
-						<ul class="user-recommendations">
-							<li><span>6</span> recos</li>
-							<li>Guardado <span>67</span></li>
-						</ul>						
-						<ul class="categories">
-							<li><img src="img/intereses/espectaculo.svg" alt=""></li>
-							<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
-							<li><img src="img/intereses/fiesta.svg" alt=""></li>
-							<li><img src="img/intereses/fotografia.svg" alt=""></li>
-							<li><img src="img/intereses/mercados.svg" alt=""></li>
-							<li>+6</li>
-						</ul>					
-					</div>
-				</div>
-			</div>
-			
+		</div>
 
-		</div>	
+		<div class="tab-contents">
+
+			<div class="tab-content" id="ciudades" style="display: block;">
+				<div class="row">
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-1.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Muros que dejaron una ciudad fria y apartada</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>				
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-2.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Para algunos Barcelona, para mi la mejor ciudad del mundo! para mi la mejor ciudad del mundo!</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>		
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-3.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Muros que dejaron una ciudad fria y apartada</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-1.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Para algunos Barcelona, para mi la mejor ciudad del mundo! para mi la mejor ciudad del mundo!</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-2.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Para algunos Barcelona, para mi la mejor ciudad del mundo! para mi la mejor ciudad del mundo!</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-3.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Muros que dejaron una ciudad fria y apartada</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-1.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Para algunos Barcelona, para mi la mejor ciudad del mundo! para mi la mejor ciudad del mundo!</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-2.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Muros que dejaron una ciudad fria y apartada</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="city-card-2">
+							<a href="g" class="main-link"></a>						
+							<div class="city-img" style="background-image: url('img/cities/city-3.jpg');">
+								<div class="user-info">
+									<div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div>
+									<div class="user-title">
+										<a href="a"><h2>Nombre Usuario</h2></a>
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									</div>
+								</div>						
+							</div>
+							<div class="city-content">
+								<div class="city-title">
+									<h4>Muros que dejaron una ciudad fria y apartada</h4>
+								</div>
+								<div class="city-location">
+									<span>Berlin, Alemania</span>
+								</div>
+								<ul class="city-data">
+									<li><span>6</span> recos</li>
+									<li><span>52</span> me gusta</li>
+								</ul>
+							</div>												
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="tab-content" id="usuarios" style="display: none">
+				<div class="row">
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>		
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario larguísimo</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/alojamiento.svg" alt=""></li>
+									<li><img src="img/intereses/antes-viajar.svg" alt=""></li>
+									<li><img src="img/intereses/bar.svg" alt=""></li>
+									<li><img src="img/intereses/cafe.svg" alt=""></li>
+									<li><img src="img/intereses/cambio-divisas.svg" alt=""></li>							
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/clima.svg" alt=""></li>
+									<li><img src="img/intereses/comida.svg" alt=""></li>
+									<li><img src="img/intereses/cultura.svg" alt=""></li>
+									<li><img src="img/intereses/deporte.svg" alt=""></li>
+									<li><img src="img/intereses/discoteca.svg" alt=""></li>							
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/espectaculo.svg" alt=""></li>
+									<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
+									<li><img src="img/intereses/fiesta.svg" alt=""></li>
+									<li><img src="img/intereses/fotografia.svg" alt=""></li>
+									<li><img src="img/intereses/mercados.svg" alt=""></li>
+									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/montana.svg" alt=""></li>
+									<li><img src="img/intereses/paisaje.svg" alt=""></li>
+									<li><img src="img/intereses/bar.svg" alt=""></li>
+									<li><img src="img/intereses/persona-destacada.svg" alt=""></li>
+									<li><img src="img/intereses/playa.svg" alt=""></li>									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/punto-interes.svg" alt=""></li>
+									<li><img src="img/intereses/que-llevar.svg" alt=""></li>
+									<li><img src="img/intereses/shopping.svg" alt=""></li>
+									<li><img src="img/intereses/tour.svg" alt=""></li>
+									<li><img src="img/intereses/transporte.svg" alt=""></li>					
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/espectaculo.svg" alt=""></li>
+									<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
+									<li><img src="img/intereses/fiesta.svg" alt=""></li>
+									<li><img src="img/intereses/fotografia.svg" alt=""></li>
+									<li><img src="img/intereses/mercados.svg" alt=""></li>
+									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/alojamiento.svg" alt=""></li>
+									<li><img src="img/intereses/antes-viajar.svg" alt=""></li>
+									<li><img src="img/intereses/bar.svg" alt=""></li>
+									<li><img src="img/intereses/cafe.svg" alt=""></li>
+									<li><img src="img/intereses/cambio-divisas.svg" alt=""></li>							
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/clima.svg" alt=""></li>
+									<li><img src="img/intereses/comida.svg" alt=""></li>
+									<li><img src="img/intereses/cultura.svg" alt=""></li>
+									<li><img src="img/intereses/deporte.svg" alt=""></li>
+									<li><img src="img/intereses/discoteca.svg" alt=""></li>							
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/espectaculo.svg" alt=""></li>
+									<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
+									<li><img src="img/intereses/fiesta.svg" alt=""></li>
+									<li><img src="img/intereses/fotografia.svg" alt=""></li>
+									<li><img src="img/intereses/mercados.svg" alt=""></li>
+									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/montana.svg" alt=""></li>
+									<li><img src="img/intereses/paisaje.svg" alt=""></li>
+									<li><img src="img/intereses/bar.svg" alt=""></li>
+									<li><img src="img/intereses/persona-destacada.svg" alt=""></li>
+									<li><img src="img/intereses/playa.svg" alt=""></li>
+									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>								
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/punto-interes.svg" alt=""></li>
+									<li><img src="img/intereses/que-llevar.svg" alt=""></li>
+									<li><img src="img/intereses/shopping.svg" alt=""></li>
+									<li><img src="img/intereses/tour.svg" alt=""></li>
+									<li><img src="img/intereses/transporte.svg" alt=""></li>					
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<div class="user-card">
+							<a href="g" class="main-link"></a>	
+							<div class="user-title">
+								<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>
+								<div class="user-info">
+									<a href="a"><h2>Nombre Usuario</h2></a>								
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#CommonFriends"><span>5 conexiones</span></a>
+									<em class="hide-mobile">27 años</em>
+								</div>									
+							</div>				
+							<div class="user-content">					
+								<span>Temas de interés</span>
+								<ul class="categories">
+									<li><img src="img/intereses/espectaculo.svg" alt=""></li>
+									<li><img src="img/intereses/fechas-importantes.svg" alt=""></li>
+									<li><img src="img/intereses/fiesta.svg" alt=""></li>
+									<li><img src="img/intereses/fotografia.svg" alt=""></li>
+									<li><img src="img/intereses/mercados.svg" alt=""></li>
+									
+								</ul>
+								<ul class="user-stats">
+									<li><span>541</span><br>seguidores</li>
+									<li></li>
+									<li><span>3</span><br>ciudades</li>
+								</ul>					
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<ul>
+			<li class="language">
+				<a href="javascript:void(0);">English</a> - 
+				<a href="javascript:void(0);" class="current">Español</a>
+			</li>
+			<li><a href="javascript:void(0);">Terminos y condiciones</a></li>
+			<li><a href="javascript:void(0);">Privacidad</a></li>
+		</ul>	
+	</footer>
+
+	<div class="modal fade" id="CommonFriends" tabindex="-1" role="dialog" aria-labelledby="CommonFriendsLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="CommonFriendsLabel">Ver las 15 conexiones</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true" class="close-icon"></span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <ul class="common-friends">
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>	
+						<a href="#"><h2>Juanpi Chadwick </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>	
+						<a href="#"><h2>Cheche Enriquez </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>	
+						<a href="#"><h2>Facu Echandi</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>	
+						<a href="#"><h2>Giane Severini</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>	
+						<a href="#"><h2>Soledad Enriquez</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>	
+						<a href="#"><h2>Belen Lanusse</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>	
+						<a href="#"><h2>Juanpi Chadwick </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>	
+						<a href="#"><h2>Cheche Enriquez </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>	
+						<a href="#"><h2>Facu Echandi</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>	
+						<a href="#"><h2>Giane Severini</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>	
+						<a href="#"><h2>Soledad Enriquez</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>	
+						<a href="#"><h2>Belen Lanusse</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-1.jpg');"></div></a>	
+						<a href="#"><h2>Juanpi Chadwick </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-2.jpg');"></div></a>	
+						<a href="#"><h2>Cheche Enriquez </h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+				<li>
+					<div class="user-title">
+						<a href="#"><div class="user-img" style="background-image: url('img/users/user-3.jpg');"></div></a>	
+						<a href="#"><h2>Facu Echandi</h2></a>						
+					</div>
+					<span class="status">Siguiendo</span>										
+				</li>
+	      </div>
+	      <!-- <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div> -->
+	    </div>
+	  </div>
 	</div>
-</section>
+
+		<div class="modal fade" id="ResultadosBusqueda" tabindex="-1" role="dialog" aria-labelledby="ResultadosBusquedaLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ResultadosBusquedaLabel">Resultados de búsqueda</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true" class="close-icon"></span>
+	        </button>
+	      </div>
+	    <div class="modal-body">
+			<div class="tt-menu search-results">
+				<div class="tt-dataset tt-dataset-cities">
+					<h3 class="league-name">Ciudades</h3>
+					<div class="city-result tt-suggestion tt-selectable">
+						<img src="img/city-icon.svg">
+						<div class="search-title">
+			    			<h4>Barcelona</h4>
+			    			<small>España, Europa</small>
+			    		</div>
+					</div>
+					<div class="city-result tt-suggestion tt-selectable">
+						<img src="img/city-icon.svg">
+						<div class="search-title">
+							<h4>Bruselas</h4>
+							<small>Bélgica, Europa</small>
+						</div>
+					</div>
+					<div class="city-result tt-suggestion tt-selectable">
+						<img src="img/city-icon.svg">
+						<div class="search-title">
+							<h4>Buenos Aires</h4>
+							<small>Argentina, América del Sur</small>
+						</div>
+					</div>
+					<div class="city-result tt-suggestion tt-selectable">
+						<img src="img/city-icon.svg">
+						<div class="search-title">
+							<h4>Budapest</h4>
+							<small>Hungría, Europa</small>
+						</div>
+					</div>
+				</div>
+				<div class="tt-dataset tt-dataset-users">
+					<h3 class="league-name">Usuarios</h3>
+					<div class="user-result tt-suggestion tt-selectable">
+						<img src="img/users/user-1.jpg">
+						<div class="search-title">
+							<h4>Bastian Gomez</h4>
+							<small>5 amigos en común</small>
+						</div>
+					</div>
+					<div class="user-result tt-suggestion tt-selectable">
+						<img src="img/users/user-3.jpg">
+						<div class="search-title">
+							<h4>Bartolome Mitre</h4>
+							<small>8 amigos en común</small>
+						</div>
+					</div>
+					<div class="user-result tt-suggestion tt-selectable">
+						<img src="img/users/user-1.jpg">
+						<div class="search-title">
+							<h4>Bernardo Esteban Coco</h4>
+							<small>5 amigos en común</small>
+						</div>
+					</div>
+					<div class="user-result tt-suggestion tt-selectable">
+						<img src="img/users/user-2.jpg">
+						<div class="search-title">
+							<h4>Bella Straus</h4>
+							<small>9 amigos en común</small>
+						</div>
+					</div>					
+				</div>			
+			</div>
+	    </div>
+	      <!-- <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div> -->
+	    </div>
+	  </div>
+	</div>
 
 
 
 
+
+<script src="js/handlebars.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> 
 <script src="js/bootstrap.min.js"></script> 
+<script src="js/bloodhound.js"></script>
+<script src="js/typeahead.jquery.js"></script>
+<script src="js/clamp.js"></script>
+<script src="js/main.js"></script> 
+<script>
+
+	// ACORTA TITULOS 
+
+	$(document).ready(function(e) {	
+		if ($(window).width() > 768) {			
+			$('.city-content h4').each(function(index, element) {
+	    		$clamp(element, { clamp: 2 });
+			});
+		} else {
+			$('.city-content h4').each(function(index, element) {
+	    		$clamp(element, { clamp: 3 });
+			});
+		}
+	});
+</script>
+<script>
+
+	// BUSCADOR 
+
+	var data_users = [
+	     {name: "Bastian Gomez", picture: "img/users/user-1.jpg", commonfriends: "5"}
+	    ,{name: "Cheche Enriquez", picture: "img/users/user-2.jpg", commonfriends: "5"}
+	    ,{name: "Bartolome Mitre", picture: "img/users/user-3.jpg", commonfriends: "8"}
+	    ,{name: "Bernardo Esteban Coco", picture: "img/users/user-1.jpg", commonfriends: "5"}
+	    ,{name: "Bella Straus", picture: "img/users/user-2.jpg", commonfriends: "9"}
+	    ,{name: "Martin Ruiz Coco", picture: "img/users/user-3.jpg", commonfriends: "10"}
+	];
+
+	var data_cities = [
+	     {cityname: "Barcelona", countryname: "España", continentname: "Europa"}
+	    ,{cityname: "Bruselas", countryname: "Bélgica", continentname: "Europa"}
+	    ,{cityname: "Buenos Aires", countryname: "Argentina", continentname: "América del Sur"}
+	    ,{cityname: "Budapest", countryname: "Hungría", continentname: "Europa"}
+	    ,{cityname: "Berlín", countryname: "Alemania", continentname: "Europa"}
+	    ,{cityname: "Roma", countryname: "Italia", continentname: "Europa"}
+	];
+
+	var users = new Bloodhound({
+	  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+	  queryTokenizer: Bloodhound.tokenizers.whitespace,
+	  local: data_users
+	});
+
+	var cities = new Bloodhound({
+	  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('cityname'),
+	  queryTokenizer: Bloodhound.tokenizers.whitespace,
+	  local: data_cities
+	});
+
+	users.initialize();
+	$('.typeahead').typeahead(	
+	    {
+	        hint: true,
+	        highlight: true,
+	        minLength: 1,	        
+	    },    
+	    {
+	        name: 'cities',
+	        displayKey: 'cityname',
+	        source: cities.ttAdapter(),
+	        templates: {
+	            header: '<h3 class="league-name">Ciudades</h3>',
+	            suggestion: Handlebars.compile('<div class="city-result"><img src="img/city-icon.svg" /><div class="search-title"><h4>{{cityname}}</h4><small>{{countryname}}, {{continentname}}</small></div>'),
+	            footer : [ '<div class="more-results">', '<a href="javascript:void(0);" data-toggle="modal" data-target="#ResultadosBusqueda">Ver todos los resultados</a>','<div>'].join('\n')  
+	        },
+	        limit: 4,
+	    },
+	    {
+	        name: 'users',
+	        displayKey: 'name',
+	        source: users.ttAdapter(),
+	        templates: {
+	        	header: '<h3 class="league-name">Usuarios</h3>',            
+	            suggestion: Handlebars.compile('<div class="user-result"><img src="{{picture}}"/><div class="search-title"><h4>{{name}}</h4><small>{{commonfriends}} conexiones</small></div>'),            
+				footer : [ '<div class="more-results">', '<a href="javascript:void(0);" data-toggle="modal" data-target="#ResultadosBusqueda">Ver todos los resultados</a>','<div>'].join('\n')  
+	        },
+	        limit: 4,
+	    }
+	);
+
+
+
+</script>
 </body>
 </html>
